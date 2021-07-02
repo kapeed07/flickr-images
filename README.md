@@ -1,4 +1,5 @@
-![](./src/assets/img/logo.png)
+<img src="./src/assets/logo.png" width="100" />
+
 
 # Flickr Image
 
