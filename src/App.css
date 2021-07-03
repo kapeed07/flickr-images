@@ -1,8 +1,69 @@
 body {
-  background-color: #F9F9F9;
+  background-color: #F7F7FF;
 }
-.App {
+.content {
   margin: 0 auto;
-  border: 1px dashed red;
   max-width: 992px;
+}
+
+.jumbotron {
+  background-color: #EA526F;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 100px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar_container {
+  position: absolute;
+  top: 130px;
+  width: 500px;
+}
+
+.photos {
+  line-height: 0;  
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           8px;  
+}
+.photos img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom: 8px;
+  border: 2px solid #23B5D3;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* 1024-768    - tablet landscape */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .photos {
+    -webkit-column-count: 3;
+    -moz-column-count:    3;
+    column-count:         3;
+  }
+}
+
+/* 768-480     - tablet */
+@media all and (min-width: 500px) and (max-width: 768px) {
+  .photos {
+    -webkit-column-count: 2;
+    -moz-column-count:    2;
+    column-count:         2;
+  }
+}
+
+/* 480-less    - phone landscape & smaller */
+@media all and (max-width: 500px) {
+  .photos {
+    -webkit-column-count: 1;
+    -moz-column-count:    1;
+    column-count:         1;
+  }
 }

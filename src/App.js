@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import AppContextProvider from './contexts/AppContext';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello World</p>
-    </div>
+    <AppContextProvider>
+      <Home />
+    </AppContextProvider>
   );
 }
 
